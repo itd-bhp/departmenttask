@@ -23,7 +23,6 @@ public class Main {
             XMLConverter.writeXMLToFile(xmlString, "output.xml");
 
         } catch (FileNotFoundException e) {
-
             System.err.println("Error: The CSV file '" + csvFile + "' was not found. Please check the file path.");
         } catch (IOException e) {
             System.err.println("Error: An I/O error occurred: " + e.getMessage());
