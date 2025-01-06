@@ -7,7 +7,7 @@ import java.util.List;
 
 public class XMLConverter {
 
-    // Convert Department objects to XML string
+
     public static String convertToXogXML(List<Department> departments) {
         StringBuilder xmlBuilder = new StringBuilder();
         xmlBuilder.append("<NikuDataBus xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='../xsd/nikuxog_department.xsd'>\n")
@@ -26,7 +26,7 @@ public class XMLConverter {
         return xmlBuilder.toString();
     }
 
-    // Recursively build XML for each department
+
     private static void appendDepartmentXML(Department dept, StringBuilder xmlBuilder) {
         if (dept == null) {
             System.err.println("Error: Department is null, skipping...");
@@ -48,7 +48,7 @@ public class XMLConverter {
         }
     }
 
-    // Escape special XML characters
+
     private static String escapeXml(String input) {
         if (input == null) {
             return ""; // Return empty string if input is null

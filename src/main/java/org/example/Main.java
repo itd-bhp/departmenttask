@@ -9,16 +9,16 @@ public class Main {
     public static void main(String[] args) {
         String csvFile = "departments.csv";
         try {
-            // Read CSV data
+
             List<String[]> data = CSVReader.readCSV(csvFile);
 
-            // Convert CSV to Department objects
+
             List<Department> departments = DepartmentConverter.convertToDepartments(data);
 
-            // Convert to XML string
+
             String xmlString = XMLConverter.convertToXogXML(departments);
 
-            // Print the XML and write to a file
+
             System.out.println(xmlString);
             XMLConverter.writeXMLToFile(xmlString, "output.xml");
 
