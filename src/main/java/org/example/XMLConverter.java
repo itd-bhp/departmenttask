@@ -17,8 +17,8 @@ public class XMLConverter {
         for (Department dept : departments) {
             try {
                 appendDepartmentXML(dept, xmlBuilder); // Handle each department conversion
-            } catch (Exception e) {
-                System.err.println("Error processing department ID " + dept.id + ": " + e.getMessage());
+            } catch (Exception exp) {
+                System.err.println("Error processing department ID " + dept.id + ": " + exp.getMessage());
             }
         }
 

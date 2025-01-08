@@ -16,7 +16,6 @@ class DepartmentConverterTest {
                 new String[]{ "", "C", "Corporate", "" },
                 new String[]{ "", "CCA", "Corporate Compliance & Audit", "C" },
                 new String[]{ "", "CCM", "Corporate Communications", "C" },
-                new String[]{ "", "CHR", "Corporate HR", "C" },
                 new String[]{ "#", "CHR-D", "Corporate HR Development", "CHR" },
                 new String[]{ "", "F", "Finance", "" }
         );

@@ -7,7 +7,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        String csvFile = "departments.csv";
+        String csvFile = "department.csv";
         try {
 
             List<String[]> data = CSVReader.readCSV(csvFile);

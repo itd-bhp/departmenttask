@@ -35,8 +35,8 @@ public class CSVReader {
                 }
             }
             return data;
-        } catch (IOException e) {
-            throw new IOException("Error reading file: " + fileName, e);
+        } catch (IOException exp) {
+            throw new IOException("Error reading file: " + fileName, exp);
         }
     }
 }
