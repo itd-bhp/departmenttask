@@ -43,4 +43,5 @@ public class Department {
     public String getParentDeptId() {
         return parentDeptId;
     }
+
 }

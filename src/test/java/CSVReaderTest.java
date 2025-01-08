@@ -13,7 +13,7 @@ class CSVReaderTest {
         List<String[]> data = CSVReader.readCSV("departments.csv");
 
         assertNotNull(data, "Data should not be null");
-        assertTrue(data.size() > 0, "Data should contain rows");
+        assertFalse(data.isEmpty(), "Data should contain rows");
 
         assertArrayEquals(new String[]{ "", "C", "Corporate"}, data.get(0));
     }

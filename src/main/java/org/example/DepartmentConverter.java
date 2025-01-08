@@ -42,10 +42,10 @@ public class DepartmentConverter {
                         System.err.println("Warning: Parent department not found for department ID " + departmentId + ": " + parentDepartmentId);
                     }
                 }
-            } catch (Exception e) {
+            } catch (Exception exp) {
 
                 System.err.println("Error processing row: " + Arrays.toString(row));
-                e.printStackTrace();
+                exp.printStackTrace();
             }
         }
 
